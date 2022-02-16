@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3669901b63.js" crossorigin="anonymous"></script></head>
+<body>  
+   <div class="calculadora">
+        <header>
+            Calculadora IMC
+        </header>
+            <section class="main-content">
+                <div class="row">
+                    <div class="column-3 column label">
+                        <label for="Sequiso">Sexo</label>
+                    </div>
+                    <div class="sexo">                 
+                        <label for="M" class="sexo">
+                            <input type="radio" name="sexo" id="M" value="M">
+                            <div class="icon">
+                                <i class="fa-solid fa-person fa-fade fa-2x"></i>
+                            </div>
+                        </label>
+    
+                        <label for="F" class="sexo">
+                            <input type="radio" name="sexo" id="F" value="F">
+                            <div class="icon">
+                                <i class="fa-solid fa-person-dress fa-fade fa-2x"></i>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column-3 column label">
+                        <label for="">Idade</label>
+                    </div>
+                    <div class="column-9 column input">
+                        <input type="number" step="1" max="120" name="idade" id="idade">
+                    </div>                       
+                </div>
+
+                <div class="row"> 
+                    <div class="column-3 column label">
+                        <label for="">Peso</label>
+                    </div>
+                    <div class="column-9 column input">
+                        <input type="number" name="peso" step="0.01" max="200.00" id="peso">
+                    </div>                       
+                </div>
+
+                <div class="row">
+                    <div class="column-3 column label">
+                        <label for="">Altura</label>
+                </div>
+                    <div class="column-9 column input">
+                        <input type="number" step="0.01" max="10.0" name="altura" id="altura">
+                    </div>                       
+                </div>
+                
+                <button onclick="somar()" class="btn">Gerar Resultado</button>
+
+            </section> 
+            
+            <div class="resultado">
+                <p>
+                    <div id="resultadox"></div>
+                </p>
+                <p>
+                    <div id="resultadoxx"></div>
+                </p>
+            </div>
+
+            
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
