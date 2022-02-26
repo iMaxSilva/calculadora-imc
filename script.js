@@ -35,9 +35,3 @@ resultadofinal = (`Seu IMC é de ${imc.toFixed(2)} kg/m2`)
 document.getElementById("resultadox").innerText = resultadofinal
 document.getElementById("resultadoxx").innerText = resultadofinal1
 }
-
-
-
-if(empty(imc)) {
-    // Codigo aqui
-}
